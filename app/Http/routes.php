@@ -19,11 +19,11 @@ Route::get('1',function(){
     #    'title'=>'test title',
     #    'content'=>'test content'
     #]);
-    $post=\App\Post::find(1);
-    
-    
-    $post->title=' saved title';
-    $post->content='saved content';
-    $post->save();
+    #$post=\App\Post::find(1);
+    #$post->delete();
+    \App\Post::destroy(3,5,7);
+    #$post->title=' saved title';
+    #$post->content='saved content';
+    #$post->save();
     
 });
